@@ -1,12 +1,25 @@
-# React + Vite
+# Movie-Listing-App
+A small app that prompts for movies through the OMDb API. Built in React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Search Functionality
+    User types a movie name and returns a movie
+    Press enter, or click 'Go' to trigger the search
 
-Currently, two official plugins are available:
+2. Results list
+    Show movie's poster, titles and release year in grid format
+    Clicking on movie takes you to individual movie details
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Movie Details
+    Further details on the movie
+    Synopisis, poster, title, ratings, etc
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Acceptance Criteria:
+    Search works
+    Results display correctly
+    Navigation works
+    Details displays informative information
+    Error handling
+    Responsive Web Design
+
+
