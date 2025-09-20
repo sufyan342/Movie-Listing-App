@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { searchQuery } from "../Services/omdb";
+import ResultsGrid from "../Components/ResultsGrid";
 
 export default function SearchPage() {
     const [search, setSearch] = useState("");
@@ -15,6 +16,7 @@ export default function SearchPage() {
 
     try {
         const data = await searchQuery(search);
+        setResult(data);
 
         if (data == []) {
             setError("Empty response");
@@ -43,6 +45,10 @@ export default function SearchPage() {
             <button onClick={handleSearch}>
                 Search
             </button>
+
+            {loading && <p>Loading...</p>}
+            {error && <p>{error}</p>}
+            {!loading && !error && <ResultsGrid movies = {result} />}
         </div>
     )
 }
